@@ -6,6 +6,10 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+Dotenv::Railtie.load
+FOURSQUARE_CLIENT_ID = ENV['IYNVAHUINLRYLNK0VOZOZ0MNI3NMK0OXUGQAAPJZG1J4YVJA']
+FOURSQUARE_SECRET = ENV['AX5LRPWBMYJH4E5MJ5QG1KHCVP452Y33IHAUUOBMER4DI54F']
+
 module ApisAndFaradayReading
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
